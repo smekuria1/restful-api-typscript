@@ -55,7 +55,7 @@ export async function getProductHandler(
 
   const product = await findProduct({ productId });
 
-  if (!product) {
+  if (!product || !productId) {
     return res.sendStatus(404);
   }
   return res.send(product);

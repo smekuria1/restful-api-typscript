@@ -1,0 +1,89 @@
+2022-08-02T01:19:04.182874+00:00 app[api]: Initial release by user solmek18@gmail.com
+2022-08-02T01:19:04.182874+00:00 app[api]: Release v1 created by user solmek18@gmail.com
+2022-08-02T01:19:04.335631+00:00 app[api]: Enable Logplex by user solmek18@gmail.com
+2022-08-02T01:19:04.335631+00:00 app[api]: Release v2 created by user solmek18@gmail.com
+2022-08-02T01:21:08.823348+00:00 app[api]: Deployed web (73c2e3643c04) by user solmek18@gmail.com
+2022-08-02T01:21:08.823348+00:00 app[api]: Release v3 created by user solmek18@gmail.com
+2022-08-02T01:21:08.837149+00:00 app[api]: Scaled to web@1:Free by user solmek18@gmail.com
+2022-08-02T01:21:25.592376+00:00 heroku[web.1]: Starting process with command `node build/src/app.js`
+2022-08-02T01:21:30.443422+00:00 app[web.1]: (node:3) [PINODEP008] PinoWarning: prettyPrint is deprecated, use the pino-pretty transport instead
+2022-08-02T01:21:30.443435+00:00 app[web.1]: (Use `node --trace-warnings ...` to show where the warning was created)
+2022-08-02T01:21:30.446173+00:00 app[web.1]: [21] INFO (3 on a6850b10-0de5-4d86-a0f3-4b9b15582482): Server is running on port http://localhost:48066
+2022-08-02T01:21:30.594257+00:00 app[web.1]: [21] INFO (3 on a6850b10-0de5-4d86-a0f3-4b9b15582482): MongoDB is connected
+2022-08-02T01:21:30.595641+00:00 app[web.1]: [21] INFO (3 on a6850b10-0de5-4d86-a0f3-4b9b15582482): Docs available at http://localhost:48066/docs
+2022-08-02T01:21:30.786440+00:00 heroku[web.1]: State changed from starting to up
+2022-08-02T01:21:56.029178+00:00 heroku[router]: at=info method=GET path="/" host=glacial-island-22144.herokuapp.com request_id=05694ebd-7b2d-42cc-8a2d-b49020e3689d fwd="100.17.36.222" dyno=web.1 connect=0ms service=6ms status=404 bytes=383 protocol=https
+2022-08-02T01:22:19.376058+00:00 heroku[router]: at=info method=GET path="/healthcheck" host=glacial-island-22144.herokuapp.com request_id=e442f636-b1d8-4eaf-bf07-3e80b250f959 fwd="100.17.36.222" dyno=web.1 connect=0ms service=3ms status=200 bytes=201 protocol=https
+2022-08-02T01:22:19.899464+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=glacial-island-22144.herokuapp.com request_id=beaba730-3168-4ecf-95aa-37fa17ac13e7 fwd="100.17.36.222" dyno=web.1 connect=0ms service=4ms status=404 bytes=394 protocol=https
+2022-08-02T01:35:10.367869+00:00 heroku[router]: at=info method=GET path="/api/user" host=glacial-island-22144.herokuapp.com request_id=b63270db-0651-4965-8c0f-f3cd43f85b0f fwd="100.17.36.222" dyno=web.1 connect=0ms service=6ms status=404 bytes=391 protocol=https
+2022-08-02T01:36:01.718394+00:00 app[web.1]: jwt expired in verifyJwt error
+2022-08-02T01:36:01.815966+00:00 heroku[router]: at=info method=POST path="/api/users" host=glacial-island-22144.herokuapp.com request_id=86293c20-4279-4d0a-b75d-b59d53494349 fwd="100.17.36.222" dyno=web.1 connect=0ms service=111ms status=200 bytes=373 protocol=https
+2022-08-02T01:36:27.864531+00:00 heroku[router]: at=info method=GET path="/docs" host=glacial-island-22144.herokuapp.com request_id=c531e4b5-da68-4c5c-b8d1-1cb6bf8ec10a fwd="100.17.36.222" dyno=web.1 connect=0ms service=2ms status=301 bytes=445 protocol=https
+2022-08-02T01:36:27.929717+00:00 heroku[router]: at=info method=GET path="/docs/" host=glacial-island-22144.herokuapp.com request_id=dfe72fb2-ff07-4d90-b274-0c01e2b6dbad fwd="100.17.36.222" dyno=web.1 connect=0ms service=2ms status=200 bytes=3306 protocol=https
+2022-08-02T01:36:28.044295+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui.css" host=glacial-island-22144.herokuapp.com request_id=6130eff1-f5f3-4fab-abc3-26b7584de5c2 fwd="100.17.36.222" dyno=web.1 connect=0ms service=6ms status=200 bytes=144502 protocol=https
+2022-08-02T01:36:28.084199+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui-init.js" host=glacial-island-22144.herokuapp.com request_id=786f2a86-a4b9-4d06-b7f2-58ff6e8ccd19 fwd="100.17.36.222" dyno=web.1 connect=0ms service=2ms status=200 bytes=5841 protocol=https
+2022-08-02T01:36:28.090349+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui-standalone-preset.js" host=glacial-island-22144.herokuapp.com request_id=aa23a568-94ba-4d98-aa2c-5782c668e088 fwd="100.17.36.222" dyno=web.1 connect=0ms service=10ms status=200 bytes=339918 protocol=https
+2022-08-02T01:36:28.093910+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui-bundle.js" host=glacial-island-22144.herokuapp.com request_id=3b92635c-7622-4d98-92c0-95375f602dbc fwd="100.17.36.222" dyno=web.1 connect=0ms service=13ms status=200 bytes=1097546 protocol=https
+2022-08-02T01:36:28.632188+00:00 heroku[router]: at=info method=GET path="/docs/favicon-32x32.png" host=glacial-island-22144.herokuapp.com request_id=45a5f047-1962-4032-a0dc-f0f38f5890da fwd="100.17.36.222" dyno=web.1 connect=0ms service=3ms status=200 bytes=901 protocol=https
+2022-08-02T01:39:14.493917+00:00 app[web.1]: jwt expired in verifyJwt error
+2022-08-02T01:39:14.593723+00:00 app[web.1]: [39] INFO (3 on a6850b10-0de5-4d86-a0f3-4b9b15582482): User session created
+2022-08-02T01:39:14.598699+00:00 heroku[router]: at=info method=POST path="/api/sessions" host=glacial-island-22144.herokuapp.com request_id=ed5c4e41-6af7-4af3-9de1-99116ff11ab7 fwd="100.17.36.222" dyno=web.1 connect=0ms service=106ms status=200 bytes=1636 protocol=https
+2022-08-02T01:39:19.415723+00:00 heroku[router]: at=info method=GET path="/api/sessions" host=glacial-island-22144.herokuapp.com request_id=23b777cc-56c5-4939-8a4b-3ee24d9de10b fwd="100.17.36.222" dyno=web.1 connect=0ms service=5ms status=200 bytes=413 protocol=https
+2022-08-02T01:41:34.946153+00:00 heroku[router]: at=info method=POST path="/api/products" host=glacial-island-22144.herokuapp.com request_id=bae407e0-f1a6-40b7-ac93-5cf879e73f3d fwd="100.17.36.222" dyno=web.1 connect=0ms service=15ms status=200 bytes=846 protocol=https
+2022-08-02T01:43:54.744292+00:00 heroku[router]: at=info method=GET path="/api/products/product_n4euq54xe6" host=glacial-island-22144.herokuapp.com request_id=bd3a835e-14fa-4b0e-bdcb-a5fa84505c65 fwd="100.17.36.222" dyno=web.1 connect=0ms service=5ms status=200 bytes=846 protocol=https
+2022-08-02T01:51:30.906715+00:00 app[web.1]: [51] ERROR (3 on a6850b10-0de5-4d86-a0f3-4b9b15582482): MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "test@example.com" }
+2022-08-02T01:51:30.906726+00:00 app[web.1]: err: {
+2022-08-02T01:51:30.906726+00:00 app[web.1]: "type": "Error",
+2022-08-02T01:51:30.906727+00:00 app[web.1]: "message": "MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"test@example.com\" }",
+2022-08-02T01:51:30.906728+00:00 app[web.1]: "stack":
+2022-08-02T01:51:30.906728+00:00 app[web.1]: Error: MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "test@example.com" }
+2022-08-02T01:51:30.906729+00:00 app[web.1]: at /src/build/src/service/user.service.js:26:19
+2022-08-02T01:51:30.906731+00:00 app[web.1]: at Generator.throw (<anonymous>)
+2022-08-02T01:51:30.906732+00:00 app[web.1]: at rejected (/src/build/src/service/user.service.js:6:65)
+2022-08-02T01:51:30.906732+00:00 app[web.1]: at runMicrotasks (<anonymous>)
+2022-08-02T01:51:30.906733+00:00 app[web.1]: at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-08-02T01:51:30.906733+00:00 app[web.1]: }
+2022-08-02T01:51:30.911397+00:00 heroku[router]: at=info method=POST path="/api/users" host=rest-api-prod-smek.herokuapp.com request_id=ea159684-752b-4f75-a472-f421d0febb54 fwd="100.17.36.222" dyno=web.1 connect=0ms service=91ms status=409 bytes=328 protocol=https
+2022-08-02T01:54:32.270623+00:00 heroku[router]: at=info method=GET path="/docs/" host=rest-api-prod-smek.herokuapp.com request_id=9b15ef5f-c62a-4ce4-a458-1dd4dfca15fd fwd="100.17.36.222" dyno=web.1 connect=0ms service=1ms status=200 bytes=3306 protocol=https
+2022-08-02T01:54:32.352307+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui.css" host=rest-api-prod-smek.herokuapp.com request_id=ee3bae0b-1b6c-4c6c-b758-96702247482b fwd="100.17.36.222" dyno=web.1 connect=0ms service=2ms status=200 bytes=144502 protocol=https
+2022-08-02T01:54:32.389308+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui-init.js" host=rest-api-prod-smek.herokuapp.com request_id=96e993a6-c031-4131-a033-4ebdefa7aa1c fwd="100.17.36.222" dyno=web.1 connect=0ms service=1ms status=200 bytes=5841 protocol=https
+2022-08-02T01:54:32.394134+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui-standalone-preset.js" host=rest-api-prod-smek.herokuapp.com request_id=67cebaf8-fa6a-493b-bf8d-074522101936 fwd="100.17.36.222" dyno=web.1 connect=0ms service=4ms status=200 bytes=339918 protocol=https
+2022-08-02T01:54:32.396586+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui-bundle.js" host=rest-api-prod-smek.herokuapp.com request_id=ea0e23bf-41cd-4ef6-8674-b1989a21c589 fwd="100.17.36.222" dyno=web.1 connect=0ms service=13ms status=200 bytes=1097546 protocol=https
+2022-08-02T01:54:32.959950+00:00 heroku[router]: at=info method=GET path="/docs/favicon-32x32.png" host=rest-api-prod-smek.herokuapp.com request_id=823cece4-a71e-4269-b072-08c005cb0283 fwd="100.17.36.222" dyno=web.1 connect=0ms service=1ms status=200 bytes=901 protocol=https
+2022-08-02T02:26:46.450322+00:00 heroku[web.1]: Idling
+2022-08-02T02:26:46.454965+00:00 heroku[web.1]: State changed from up to down
+2022-08-02T02:26:47.181675+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2022-08-02T02:26:47.411914+00:00 heroku[web.1]: Process exited with status 143
+2022-08-02T17:30:15.915149+00:00 heroku[web.1]: Unidling
+2022-08-02T17:30:15.916745+00:00 heroku[web.1]: State changed from down to starting
+2022-08-02T17:30:36.657439+00:00 heroku[web.1]: Starting process with command `node build/src/app.js`
+2022-08-02T17:30:39.996841+00:00 app[web.1]: (node:3) [PINODEP008] PinoWarning: prettyPrint is deprecated, use the pino-pretty transport instead
+2022-08-02T17:30:39.996855+00:00 app[web.1]: (Use `node --trace-warnings ...` to show where the warning was created)
+2022-08-02T17:30:39.998809+00:00 app[web.1]: [30] INFO (3 on 65994376-9a39-4e93-bd73-48b989fab2c4): Server is running on port http://localhost:16215
+2022-08-02T17:30:40.126398+00:00 app[web.1]: [30] INFO (3 on 65994376-9a39-4e93-bd73-48b989fab2c4): MongoDB is connected
+2022-08-02T17:30:40.127636+00:00 app[web.1]: [30] INFO (3 on 65994376-9a39-4e93-bd73-48b989fab2c4): Docs available at http://localhost:16215/docs
+2022-08-02T17:30:40.488787+00:00 heroku[web.1]: State changed from starting to up
+2022-08-02T17:30:42.002892+00:00 heroku[router]: at=info method=GET path="/" host=rest-api-prod-smek.herokuapp.com request_id=39bcd16d-dee8-4d1b-b2c8-bf377b332ab8 fwd="100.17.36.222" dyno=web.1 connect=0ms service=9ms status=404 bytes=383 protocol=https
+2022-08-02T17:30:42.855522+00:00 heroku[router]: at=info method=GET path="/docs" host=rest-api-prod-smek.herokuapp.com request_id=7012cfed-e6ad-4f90-971a-7430fbbd127e fwd="100.17.36.222" dyno=web.1 connect=8ms service=2ms status=301 bytes=445 protocol=https
+2022-08-02T17:30:42.885597+00:00 heroku[router]: at=info method=GET path="/docs/" host=rest-api-prod-smek.herokuapp.com request_id=0431c89f-d2b0-4275-adea-392a7fc2d1b9 fwd="100.17.36.222" dyno=web.1 connect=0ms service=4ms status=304 bytes=151 protocol=https
+2022-08-02T17:30:42.958260+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui.css" host=rest-api-prod-smek.herokuapp.com request_id=cb2c501b-2737-47ca-b758-d18a756b287c fwd="100.17.36.222" dyno=web.1 connect=0ms service=1ms status=304 bytes=239 protocol=https
+2022-08-02T17:30:42.978412+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui-bundle.js" host=rest-api-prod-smek.herokuapp.com request_id=67800964-f05a-4ac7-9b18-8544701c7c41 fwd="100.17.36.222" dyno=web.1 connect=0ms service=1ms status=304 bytes=240 protocol=https
+2022-08-02T17:30:42.994860+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui-standalone-preset.js" host=rest-api-prod-smek.herokuapp.com request_id=eae76043-6f32-4a08-9e81-0f95554fc2b5 fwd="100.17.36.222" dyno=web.1 connect=0ms service=1ms status=304 bytes=239 protocol=https
+2022-08-02T17:30:43.110438+00:00 heroku[router]: at=info method=GET path="/docs/swagger-ui-init.js" host=rest-api-prod-smek.herokuapp.com request_id=1475eba9-0b2d-4639-b3ad-8c1012b69965 fwd="100.17.36.222" dyno=web.1 connect=0ms service=1ms status=304 bytes=152 protocol=https
+2022-08-02T17:30:44.151239+00:00 heroku[router]: at=info method=GET path="/docs/favicon-32x32.png" host=rest-api-prod-smek.herokuapp.com request_id=6f4b388a-d0bd-4baa-ac4a-a0679abe9ee8 fwd="100.17.36.222" dyno=web.1 connect=0ms service=1ms status=304 bytes=237 protocol=https
+2022-08-02T17:33:37.083510+00:00 app[web.1]: jwt expired in verifyJwt error
+2022-08-02T17:33:37.126987+00:00 app[web.1]: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmU4N2Y4MTYzODE0YTczNTIxYmEyNjciLCJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJuYW1lIjoiSmFuZSBEb2UiLCJwYXNzd29yZCI6IiQyYiQxMCQuQ2l1L255ZWl3bXBNTHJHSnU2QlR1TDZzMVdmR1J0ZXlzR1NqMDU4RDF6OGxCeXRFY25zQyIsImNyZWF0ZWRBdCI6IjIwMjItMDgtMDJUMDE6MzY6MDEuNzI0WiIsInVwZGF0ZWRBdCI6IjIwMjItMDgtMDJUMDE6MzY6MDEuNzI0WiIsIl9fdiI6MCwic2Vzc2lvbiI6IjYyZTg4MDQyNjM4MTRhNzM1MjFiYTI2YSIsImlhdCI6MTY1OTQ2MTYxNywiZXhwIjoxNjkxMDE5MjE3fQ.sdUH0pWdxhs2Sf62pFr56sAI45tryCZpOHg9LRfXFondEC-dkyjTlbZaO62Vo3LmVgBkmaOSp1u-JNbZcu9DRoaIC9AP_-DGmFO6qNaR-PqcgVYXyzAR-SbG5220SZYErAScxn0REXT1GE0UdYHLNElXBiO0iSzthzP4NIL_AoXa0X3uAyRL9_1DGs9K4802IwkzUBP4XCiMHNfuVkNHtMFDkbfBCdBGbxOwub9lrDpkBTj5WCJREJS76sRs_HSHhMRrqg8VJd_ONx4v8xSqoXgo7EGYNjNFiVbL-sHeWrO5MWCSlCXbdGjg3dHnCE4YozmDYd6eGDAEtRF1jjc2Ng
+2022-08-02T17:33:37.140853+00:00 heroku[router]: at=info method=GET path="/api/sessions" host=rest-api-prod-smek.herokuapp.com request_id=fea06153-7eba-477a-b265-0616831f1b1e fwd="100.17.36.222" dyno=web.1 connect=0ms service=62ms status=200 bytes=1225 protocol=https
+2022-08-02T17:34:14.878815+00:00 app[web.1]: jwt expired in verifyJwt error
+2022-08-02T17:34:14.886605+00:00 app[web.1]: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmU4N2Y4MTYzODE0YTczNTIxYmEyNjciLCJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJuYW1lIjoiSmFuZSBEb2UiLCJwYXNzd29yZCI6IiQyYiQxMCQuQ2l1L255ZWl3bXBNTHJHSnU2QlR1TDZzMVdmR1J0ZXlzR1NqMDU4RDF6OGxCeXRFY25zQyIsImNyZWF0ZWRBdCI6IjIwMjItMDgtMDJUMDE6MzY6MDEuNzI0WiIsInVwZGF0ZWRBdCI6IjIwMjItMDgtMDJUMDE6MzY6MDEuNzI0WiIsIl9fdiI6MCwic2Vzc2lvbiI6IjYyZTg4MDQyNjM4MTRhNzM1MjFiYTI2YSIsImlhdCI6MTY1OTQ2MTY1NCwiZXhwIjoxNjkxMDE5MjU0fQ.ngXIN8IdtUFB75blOwD66LK2mqo1gOGQMzBvK1xHyN1p2Fc03gOH1NS2AuWbn8jKPB2JmFXc9ty8fr0gri7Lc5OPFjDAKtXaLKZeh_HoLe-SZC1T10CtQdSNOaAnm1ADMPnhJno9X8GaHI6yJuneQXpvAia1YIvViD8mJVxTdeUGbSDp_Ca_hF8b1uWwTDmgzAkjnWAslQcn2NFGd_9HOtaOX_hM4X_AXiWWRwpnUssUXBtMy6ubQAWmdJ7wIr4367AXFZbci40la5Z-Kcw5X7KYmFjJNllVA1zbqJiQO92Gdaq7bNEyM_FMVqgkIkJK6lq0r_APeDHqsalCAdYaJQ
+2022-08-02T17:34:14.904941+00:00 heroku[router]: at=info method=DELETE path="/api/sessions" host=rest-api-prod-smek.herokuapp.com request_id=b3b9454b-ee85-4272-a9b5-06cf2ec5828e fwd="100.17.36.222" dyno=web.1 connect=0ms service=28ms status=200 bytes=1058 protocol=https
+2022-08-02T17:38:59.478790+00:00 heroku[router]: at=info method=GET path="/docs/favicon-32x32.png" host=rest-api-prod-smek.herokuapp.com request_id=b3ee08ae-6cd5-45f4-a5dd-30f5cccc5227 fwd="100.17.36.222" dyno=web.1 connect=0ms service=1ms status=304 bytes=237 protocol=https
+2022-08-02T17:39:39.472120+00:00 heroku[router]: at=info method=POST path="/api/users" host=rest-api-prod-smek.herokuapp.com request_id=75e64cc7-0fd3-4104-95a1-34045d248ced fwd="100.17.36.222" dyno=web.1 connect=0ms service=102ms status=200 bytes=373 protocol=https
+2022-08-02T17:43:09.794441+00:00 app[web.1]: jwt expired in verifyJwt error
+2022-08-02T17:43:09.797823+00:00 app[web.1]: jwt must be provided in verifyJwt error
+2022-08-02T17:43:09.798322+00:00 app[web.1]: false
+2022-08-02T17:43:39.791283+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/api/sessions" host=rest-api-prod-smek.herokuapp.com request_id=65e27fb1-9eb0-49ce-be71-ef09d6fc8edb fwd="100.17.36.222" dyno=web.1 connect=0ms service=30000ms status=503 bytes=0 protocol=https
+2022-08-02T17:43:40.865167+00:00 app[web.1]: jwt expired in verifyJwt error
+2022-08-02T17:43:40.948225+00:00 app[web.1]: [43] INFO (3 on 65994376-9a39-4e93-bd73-48b989fab2c4): User session created
+2022-08-02T17:43:40.953845+00:00 heroku[router]: at=info method=POST path="/api/sessions" host=rest-api-prod-smek.herokuapp.com request_id=ffe24ec4-3d85-4a13-90f1-acf5c6ef4063 fwd="100.17.36.222" dyno=web.1 connect=0ms service=90ms status=200 bytes=1636 protocol=https
+2022-08-02T17:43:46.408927+00:00 heroku[router]: at=info method=GET path="/api/sessions" host=rest-api-prod-smek.herokuapp.com request_id=71d0cfc4-511f-4b0e-81fd-0c8603aad0da fwd="100.17.36.222" dyno=web.1 connect=0ms service=6ms status=200 bytes=413 protocol=https

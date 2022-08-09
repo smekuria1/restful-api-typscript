@@ -82,12 +82,73 @@ function routes(app: Express) {
     createUserSessionHandler
   );
   app.get("/api/sessions", requireUser, getUserSessionHandler);
+  /**
+   * @openapi
+   *  '/api/sessions':
+   *   get:
+   *      tags:
+   *         - User
+   *      summary: Get user session
+   *
+   *
+   */
   app.delete("/api/sessions", requireUser, deleteSessionHandler);
+  /**
+   * @openapi
+   *  '/api/sessions':
+   *   delete:
+   *      tags:
+   *         - User
+   *      summary: Delete user session
+   *
+   *
+   */
 
   app.post(
     "/api/products",
     [requireUser, validateResource(createProductSchema)],
     createProductHandler
+  );
+  /**
+   * @openapi
+   * '/api/products':
+   *  post:
+   *     tags:
+   *     - Products
+   *     summary: Get a product by the productId
+   *     responses:
+   *       200:
+   *         description: Success response with product
+   *       404:
+   *         description: Product not found
+   */
+  app.put(
+    "/api/products/:productId",
+    [requireUser, validateResource(updateProductSchema)],
+    updateProductHandler
+  );
+  /**
+   * @openapi
+   * '/api/products/{productId}':
+   *  put:
+   *     tags:
+   *     - Products
+   *     summary: Update a product by productId
+   *     parameters:
+   *      - name: productId
+   *        in: path
+   *        description: The id of the product
+   *        required: true
+   *     responses:
+   *       200:
+   *         description: Success update product
+   *       404:
+   *         description: Product not found
+   */
+  app.get(
+    "/api/products/:productId",
+    [validateResource(getProductSchema)],
+    getProductHandler
   );
   /**
    * @openapi
@@ -111,21 +172,29 @@ function routes(app: Express) {
    *       404:
    *         description: Product not found
    */
-  app.put(
-    "/api/products/:productId",
-    [requireUser, validateResource(updateProductSchema)],
-    updateProductHandler
-  );
-  app.get(
-    "/api/products/:productId",
-    [validateResource(getProductSchema)],
-    getProductHandler
-  );
   app.delete(
     "/api/products/:productId",
     [requireUser, validateResource(deleteProductSchema)],
     deleteProductHandler
   );
+  /**
+   * @openapi
+   * '/api/products/{productId}':
+   *  delete:
+   *     tags:
+   *     - Products
+   *     summary: Delete a product by the productId
+   *     parameters:
+   *      - name: productId
+   *        in: path
+   *        description: The id of the product
+   *        required: true
+   *     responses:
+   *       200:
+   *         description: Success deleted
+   *       404:
+   *         description: Product not found
+   */
 }
 
 export default routes;
